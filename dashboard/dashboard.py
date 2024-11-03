@@ -17,8 +17,8 @@ def create_work_holiday_ratio(df):
         'total' : 'sum'}).reset_index()
     return work_holiday_ratio
 
-cleaned_hour_df = pd.read_csv('cleaned_hour.csv')
-cleaned_day_df = pd.read_csv('cleaned_day.csv')
+cleaned_hour_df = pd.read_csv('https://drive.google.com/uc?export=download&id=1Gqq1hOdO7CyQ2t266StNGOo6o5KBATRd')
+cleaned_day_df = pd.read_csv('https://drive.google.com/uc?export=download&id=1_xLobGvShWAotqwUHarx6aTi6OnR0oZV')
 
 cleaned_hour_df["date"] = pd.to_datetime(cleaned_hour_df["date"])
 cleaned_day_df["date"] = pd.to_datetime(cleaned_day_df["date"])
